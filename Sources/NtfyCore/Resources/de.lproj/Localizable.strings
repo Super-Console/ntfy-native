@@ -1,0 +1,4 @@
+"login.notice.unavailable" = "Verwalte dies unter Systemeinstellungen → Allgemein → Anmeldeobjekte.";
+"login.notice.approval" = "Erlaube den Start bei der Anmeldung in den Systemeinstellungen.";
+"login.notice.unconfirmed" = "macOS hat die Registrierung nicht bestätigt. Prüfe die Anmeldeobjekte in den Systemeinstellungen.";
+"login.notice.failed" = "Anmeldeobjekte konnten nicht geändert werden (%@ %d). Verwalte sie in den Systemeinstellungen.";

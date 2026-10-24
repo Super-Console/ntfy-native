@@ -1,0 +1,4 @@
+"login.notice.unavailable" = "Manage this in System Settings → General → Login Items.";
+"login.notice.approval" = "Allow this app to launch at login in System Settings.";
+"login.notice.unconfirmed" = "macOS has not confirmed registration. Check Login Items in System Settings.";
+"login.notice.failed" = "Could not update Login Items (%@ %d). Manage this in System Settings.";

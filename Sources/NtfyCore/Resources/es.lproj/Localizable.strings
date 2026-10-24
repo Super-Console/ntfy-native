@@ -1,0 +1,4 @@
+"login.notice.unavailable" = "Adminístralo en Ajustes del Sistema → General → Ítems de inicio.";
+"login.notice.approval" = "Permite que la app se abra al iniciar sesión en Ajustes del Sistema.";
+"login.notice.unconfirmed" = "macOS no ha confirmado el registro. Comprueba los ítems de inicio en Ajustes del Sistema.";
+"login.notice.failed" = "No se pudieron cambiar los ítems de inicio (%@ %d). Adminístralos en Ajustes del Sistema.";

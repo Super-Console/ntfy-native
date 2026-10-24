@@ -1,0 +1,4 @@
+"login.notice.unavailable" = "Gérez ce réglage dans Réglages Système → Général → Ouverture.";
+"login.notice.approval" = "Autorisez le lancement à l’ouverture de session dans Réglages Système.";
+"login.notice.unconfirmed" = "macOS n’a pas confirmé l’inscription. Vérifiez les éléments de connexion dans Réglages Système.";
+"login.notice.failed" = "Impossible de modifier les éléments de connexion (%@ %d). Gérez-les dans Réglages Système.";

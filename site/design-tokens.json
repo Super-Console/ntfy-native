@@ -1,0 +1,37 @@
+{
+  "$meta": {"name": "ntfy-native · Quiet Signal", "source": "refactoring-ui generate_palette.py; neutral darkest=9 extended; primary #6de7b7 extended", "framework": "plain HTML/CSS", "theme": "dark"},
+  "primitive": {
+    "color": {
+      "neutral": {"50":"#fdfdfd","100":"#fafafa","200":"#dbdbdb","300":"#bdbdbd","400":"#9e9e9e","500":"#808080","600":"#656565","700":"#4b4b4b","800":"#313131","900":"#171717","950":"#0d0d0d"},
+      "primary": {"50":"#f6fffe","100":"#ebfffe","200":"#c5fff7","300":"#a0feea","400":"#86f3d2","500":"#6de7b7","600":"#47d38d","700":"#2bb562","800":"#168f3a","900":"#04671f","950":"#003b10"}
+    },
+    "font": {"ui":"-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif", "mono":"'SFMono-Regular', Consolas, 'Liberation Mono', monospace"},
+    "text": {"micro":"10px","code":"11px","xs":"12px","sm":"14px","base":"16px","lg":"18px","xl":"20px","2xl":"24px","3xl":"30px","4xl":"36px","5xl":"48px","6xl":"60px","7xl":"72px"},
+    "space":{"1":"4px","2":"8px","3":"12px","4":"16px","6":"24px","8":"32px","12":"48px","16":"64px","24":"96px","32":"128px"},
+    "weight":{"normal":"400","strong":"600"},
+    "leading":{"tight":"1","heading":"1.25","body":"1.5","relaxed":"2"},
+    "radius":{"small":"8px","base":"16px"},
+    "border":{"base":"1px","focus":"2px"},
+    "opacity":{"subtle":"0.09","glass":"0.94"},
+    "shadow":{"1":"0 1px 3px hsla(0,0%,0%,.2)","2":"0 4px 6px hsla(0,0%,0%,.2)","3":"0 5px 15px hsla(0,0%,0%,.2)","4":"0 10px 24px hsla(0,0%,0%,.2)","5":"0 15px 35px hsla(0,0%,0%,.2)"}
+  },
+  "semantic": {
+    "color":{"bg":"{color.neutral.950}","surface":"{color.neutral.900}","line":"{color.neutral.800}","text":"{color.neutral.100}","secondary":"{color.neutral.300}","muted":"{color.neutral.400}","accent":"{color.primary.500}","accent-hover":"{color.primary.400}","action-ink":"{color.neutral.950}"},
+    "radius":"{radius.base}",
+    "shadow-panel":"{shadow.5}"
+  },
+  "pairs": [
+    {"name":"主文字/背景","fg":"#fafafa","bg":"#0d0d0d"},
+    {"name":"次级文字/背景","fg":"#bdbdbd","bg":"#0d0d0d"},
+    {"name":"元数据/背景","fg":"#9e9e9e","bg":"#0d0d0d"},
+    {"name":"品牌/背景","fg":"#6de7b7","bg":"#0d0d0d"},
+    {"name":"主文字/表面","fg":"#fafafa","bg":"#171717"},
+    {"name":"次级文字/表面","fg":"#bdbdbd","bg":"#171717"},
+    {"name":"元数据/表面","fg":"#9e9e9e","bg":"#171717"},
+    {"name":"品牌/表面","fg":"#6de7b7","bg":"#171717"},
+    {"name":"行动按钮","fg":"#0d0d0d","bg":"#6de7b7"},
+    {"name":"行动按钮悬停","fg":"#0d0d0d","bg":"#86f3d2"},
+    {"name":"底部下载","fg":"#0d0d0d","bg":"#fafafa"},
+    {"name":"底部下载悬停","fg":"#0d0d0d","bg":"#bdbdbd"}
+  ]
+}

@@ -1,0 +1,4 @@
+"login.notice.unavailable" = "请在系统设置 → 通用 → 登录项中管理。";
+"login.notice.approval" = "请在系统设置中允许登录时启动。";
+"login.notice.unconfirmed" = "macOS 尚未确认注册，请在系统登录项中检查。";
+"login.notice.failed" = "登录项设置失败（%@ %d），请在系统设置中管理。";

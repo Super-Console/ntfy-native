@@ -1,0 +1,92 @@
+/*
+ * ntfy-native · Quiet Signal tokens
+ * Source of truth: ../design-tokens.json (generated via refactoring-ui palette algorithm).
+ * Components use the semantic layer only.
+ */
+:root {
+  /* primitive */
+  --color-neutral-50: #fdfdfd;
+  --color-neutral-100: #fafafa;
+  --color-neutral-200: #dbdbdb;
+  --color-neutral-300: #bdbdbd;
+  --color-neutral-400: #9e9e9e;
+  --color-neutral-500: #808080;
+  --color-neutral-600: #656565;
+  --color-neutral-700: #4b4b4b;
+  --color-neutral-800: #313131;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0d0d0d;
+  --color-primary-50: #f6fffe;
+  --color-primary-100: #ebfffe;
+  --color-primary-200: #c5fff7;
+  --color-primary-300: #a0feea;
+  --color-primary-400: #86f3d2;
+  --color-primary-500: #6de7b7;
+  --color-primary-600: #47d38d;
+  --color-primary-700: #2bb562;
+  --color-primary-800: #168f3a;
+  --color-primary-900: #04671f;
+  --color-primary-950: #003b10;
+
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --text-micro: 10px;
+  --text-code: 11px;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --text-6xl: 60px;
+  --text-7xl: 72px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  --weight-normal: 400;
+  --weight-strong: 600;
+  --leading-tight: 1;
+  --leading-heading: 1.25;
+  --leading-body: 1.5;
+  --leading-relaxed: 2;
+
+  --radius-small: 8px;
+  --radius-base: 16px;
+  --border-base: 1px;
+  --border-focus: 2px;
+  --opacity-subtle: 0.09;
+  --opacity-glass: 0.94;
+
+  --shadow-1: 0 1px 3px hsla(0, 0%, 0%, .2);
+  --shadow-2: 0 4px 6px hsla(0, 0%, 0%, .2);
+  --shadow-3: 0 5px 15px hsla(0, 0%, 0%, .2);
+  --shadow-4: 0 10px 24px hsla(0, 0%, 0%, .2);
+  --shadow-5: 0 15px 35px hsla(0, 0%, 0%, .2);
+
+  /* semantic */
+  --color-bg: #0d0d0d;
+  --color-surface: #171717;
+  --color-line: #313131;
+  --color-text: #fafafa;
+  --color-secondary: #bdbdbd;
+  --color-muted: #9e9e9e;
+  --color-accent: #6de7b7;
+  --color-accent-hover: #86f3d2;
+  --color-action-ink: #0d0d0d;
+
+  --radius: var(--radius-base);
+  --shadow-panel: var(--shadow-5);
+}

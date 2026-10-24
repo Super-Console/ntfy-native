@@ -1,0 +1,101 @@
+<!doctype html>
+<!--
+设计约束：先以灰阶建立层级，再加入品牌薄荷绿。
+主要：产品定位与下载入口；次要：本地交互演示、功能与设置步骤；三级：版本、数据边界与限制。
+唯一实心主行动：下载 macOS 版。演示按钮、导航、发布说明均为次要行动。
+Tokens：石墨 950/900/800，正文 100/300/400，品牌 500；字号 12/14/16/18/24/36/48/72；
+间距 4/8/12/16/24/32/48/64/96/128；字重 400/600；统一 16px 圆角。
+产品演示是 HTML 示意，不是真实截图，不发送任何网络消息。
+-->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d0d0d">
+  <title>ntfy-native — 让消息，抵达你的 Mac。</title>
+  <meta name="description" content="轻量、原生的 macOS 菜单栏 ntfy 客户端。订阅 Topic，接收系统通知，连接你选择的服务器。">
+  <link rel="canonical" href="https://apps.timhuang.net/ntfy-native/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="ntfy-native — 让消息，抵达你的 Mac。">
+  <meta property="og:description" content="一个安静待在菜单栏的原生 ntfy 客户端。你的服务器，你的消息。">
+  <meta property="og:url" content="https://apps.timhuang.net/ntfy-native/">
+  <meta property="og:image" content="https://apps.timhuang.net/ntfy-native/assets/app-icon.png">
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="ntfy-native 首页"><img src="assets/app-icon.png" width="32" height="32" alt=""><span>ntfy<span class="brand-suffix">-native</span></span></a>
+      <nav aria-label="主导航"><a href="#features">功能</a><a href="#start">开始使用</a><a href="#faq">常见问题</a></nav>
+      <a class="header-link" href="#download">获取应用 <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A QUIET CONNECTION TO YOUR MAC</p>
+        <h1 id="hero-title">让消息，<br><span>抵达你的 Mac。</span></h1>
+        <p class="hero-lead">脚本跑完了，备份做好了，服务有新动态了。<br class="desktop-break">让 ntfy 把消息送来，在菜单栏里，抬眼可见。</p>
+        <a class="button primary" href="#download"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg>下载 macOS 版<span aria-hidden="true">↗</span></a>
+        <p class="hero-meta">v0.1.0 <span> / </span> macOS 13+ <span> / </span> Apple silicon</p>
+      </div>
+      <div class="signal-stage" aria-label="消息抵达菜单栏的交互示意">
+        <div class="stage-grid" aria-hidden="true"></div>
+        <div class="signal-orbit orbit-one" aria-hidden="true"></div><div class="signal-orbit orbit-two" aria-hidden="true"></div>
+        <div class="stage-topline"><span class="mono">MESSAGE IN. NO FUSS.</span><span class="stage-corner" aria-hidden="true">⌁</span></div>
+        <div class="mac-menu" aria-hidden="true"><span>Finder</span><div><svg viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-9l-5 3v-3H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 4 3 3-3 3m6 0h3"/></svg><span>周六 09:41</span></div></div>
+        <div class="demo-panel">
+          <div class="panel-heading"><div class="panel-brand"><img src="assets/app-icon.png" width="28" height="28" alt=""><strong>ntfy-native</strong></div><svg class="settings-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6l1 3 3 1 2 5-2 5-3 1-1 3H9l-1-3-3-1-2-5 2-5 3-1 1-3Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div class="connection"><span class="status-dot" aria-hidden="true"></span>已连接 <span class="mono">/ daily-signals</span></div>
+          <div class="message-list" id="demo-messages" role="log" aria-label="示例消息" aria-live="polite" aria-relevant="additions">
+            <article class="message"><div><h3>部署完成</h3><time>09:41</time></div><p>新版本已上线。接下来的时间，交给你。</p><span class="message-tag mono">deploy</span></article>
+            <article class="message"><div><h3>备份已保存</h3><time>09:38</time></div><p>今天的文件，已经好好收好了。</p><span class="message-tag mono">backup</span></article>
+            <article class="message"><div><h3>任务执行成功</h3><time>09:30</time></div><p>长时间运行的脚本，终于交卷了。</p><span class="message-tag mono">automation</span></article>
+          </div>
+          <div class="panel-footer"><span>最近消息</span><span class="mono">50 MAX</span></div>
+        </div>
+        <div class="demo-controls"><button class="demo-send" id="demo-send" type="button"><span aria-hidden="true">＋</span> 模拟一条消息</button><p id="demo-status" role="status">交互示意 · 不连接真实服务器</p></div>
+      </div>
+    </section>
+    <div class="spec-strip wrap" aria-label="产品特点"><span><span class="spec-mark" aria-hidden="true">⌘</span> 为 macOS 原生构建</span><span><span class="spec-mark" aria-hidden="true">&gt;_</span> 与你的脚本接上</span><span><span class="spec-mark" aria-hidden="true">↗</span> 支持自托管 ntfy</span><span class="mono strip-end">SMALL APP. CLEAR SIGNAL.</span></div>
+
+    <section class="section wrap" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><p class="eyebrow">01 / LESS APP. MORE SIGNAL.</p><h2 id="features-title">少一个窗口。<br><span class="soft">多一份心里有数。</span></h2><p>不必一直盯着终端，也不用再留一个浏览器标签页。<br>让消息来找你，而不是反过来。</p></div>
+      <div class="feature-layout">
+        <article class="feature-main"><div class="mini-menu" aria-hidden="true"><span>你的桌面</span><span class="menu-symbol">&gt;_</span><span>⌕</span><span>09:41</span></div><div class="feature-art" aria-hidden="true"><span class="crosshair cross-one">+</span><img src="assets/app-icon.png" width="96" height="96" alt="" loading="lazy"><span class="crosshair cross-two">+</span><span class="mono art-caption">ALWAYS WITHIN REACH.</span></div><div><p class="feature-label mono">NATIVE BY NATURE</p><h3>就在菜单栏，不占你的工作台。</h3><p>SwiftUI 与 AppKit 原生界面，不显示 Dock 图标。收到消息时交给 macOS 通知，想回看时，再点开菜单栏。</p></div></article>
+        <div class="feature-stack"><article class="feature-small"><span class="feature-icon mono" aria-hidden="true">{ }</span><div><h3>你的服务器，你来选。</h3><p>连接 ntfy.sh，也支持自托管 ntfy。可选 Bearer Token 存在 macOS 钥匙串，不用再注册一套客户端账号。</p></div></article><article class="feature-small"><span class="feature-icon" aria-hidden="true">↻</span><div><h3>断了线，会再试一次。</h3><p>使用 ntfy JSON stream 接收消息，网络中断后自动退避重连。连接状态，在菜单栏面板里看得见。</p></div></article><article class="feature-small"><span class="feature-icon mono" aria-hidden="true">Aa</span><div><h3>用你熟悉的语言。</h3><p>支持简体中文、英语、法语、德语和西班牙语，跟随 macOS 首选语言。消息内容保持原样。</p></div></article></div>
+      </div>
+    </section>
+
+    <section class="workflow-section" id="start" aria-labelledby="start-title"><div class="wrap">
+      <div class="workflow-head"><div><p class="eyebrow">02 / CONNECT THE DOTS.</p><h2 id="start-title">一条命令的另一端，<br><span class="soft">是你的 Mac。</span></h2></div><p>让已有的自动化，多一个抵达你的方式。<br>不需要给脚本安装专用 SDK。</p></div>
+      <div class="workflow-grid"><ol class="setup-steps"><li><span class="step-no mono">01</span><div><h3>填入服务器与 Topic</h3><p>打开菜单栏中的设置，选择 ntfy 服务器，填写要订阅的 Topic；需要认证时再填 Token。</p></div></li><li><span class="step-no mono">02</span><div><h3>保存连接，允许通知</h3><p>保存并连接，在 macOS 提示时允许通知。之后，应用会在菜单栏等候消息。</p></div></li><li><span class="step-no mono">03</span><div><h3>从任意脚本发来消息</h3><p>用 ntfy 的 HTTP POST 发布，也可以在应用设置内手动发送。命令中的 Topic 需替换成你自己的。</p></div></li></ol>
+      <div class="terminal"><div class="terminal-head"><span class="mono">TERMINAL</span><button id="copy-command" type="button">复制命令 <span aria-hidden="true">⧉</span></button></div><pre><code id="curl-command"><span class="code-comment"># 把 &lt;your-random-topic&gt; 换成你的 Topic</span>
+<span class="code-prompt">$</span> curl \
+    -H <span class="code-string">"Title: Task complete"</span> \
+    -d <span class="code-string">"All done. Take a break."</span> \
+    <span class="code-string">"https://ntfy.sh/&lt;your-random-topic&gt;"</span></code></pre><div class="terminal-result"><span class="status-dot" aria-hidden="true"></span><span class="mono">SCRIPT → NTFY SERVER → YOUR MAC</span></div><p class="terminal-note">公开服务器上，无访问控制的 Topic 并不私密。<br>使用难以猜测的名称，不要发送敏感信息。</p><p class="copy-status" id="copy-status" role="status"></p></div></div>
+    </div></section>
+
+    <section class="section wrap data-section" aria-labelledby="data-title"><div><p class="eyebrow">03 / KNOW WHERE IT GOES.</p><h2 id="data-title">连接很简单。<br><span class="soft">边界也要清楚。</span></h2></div><div class="data-copy"><p class="data-lead">你的消息，经过你选择的 ntfy 服务器。<br>不是「完全离线」，也不是「消息不出电脑」。</p><div class="data-row"><h3>消息与设置</h3><p>服务器地址和 Topic 保存在本机偏好设置；Token 保存在系统钥匙串。面板在内存中保留最近 50 条消息，退出后不作为本地历史持久保存。</p></div><div class="data-row"><h3>传输与展示</h3><p>服务器会处理消息，存储策略取决于其配置。消息会展示在 macOS 通知中；是否在锁屏显示预览，由你的系统通知设置决定。</p></div><div class="data-row"><h3>这个网站</h3><p>没有统计脚本、广告或表单。演示只在浏览器里运行，不发真实通知。网站托管服务器可能记录正常访问日志。</p></div></div></section>
+
+    <section class="section wrap faq-section" id="faq" aria-labelledby="faq-title"><div><p class="eyebrow">04 / A FEW GOOD QUESTIONS.</p><h2 id="faq-title">想知道的，<br><span class="soft">直接说清楚。</span></h2></div><div class="faq-list">
+      <details><summary>支持哪些 Mac？<span aria-hidden="true">+</span></summary><p>当前 v0.1.0 安装包适用于 Apple silicon（M 系列芯片）的 Mac，需要 macOS 13 或更新版本。目前没有提供 Intel、Windows 或 Linux 安装包。</p></details>
+      <details><summary>下载后怎么安装？为什么可能被系统拦截？<span aria-hidden="true">+</span></summary><p>解压 ZIP，将 ntfy-native-0.1.0.app 移入「应用程序」，然后打开。当前版本仅有 ad-hoc 签名，尚未通过 Apple Developer ID 签名与公证，macOS 可能阻止首次打开。请先确认下载来源，再按系统提示在「系统设置 → 隐私与安全性」中批准。不要为了安装关闭系统安全保护。</p></details>
+      <details><summary>需要一直运行吗？能同时订阅多个 Topic 吗？<span aria-hidden="true">+</span></summary><p>接收消息需要应用保持运行并连接网络，Mac 睡眠时不承诺实时送达。当前版本一次连接一个服务器上的一个 Topic；菜单栏面板显示最近 50 条，不是完整的通知归档工具。</p></details>
+      <details><summary>登录时启动可用吗？<span aria-hidden="true">+</span></summary><p>设置内提供登录时启动开关，使用 macOS 原生 SMAppService。已验证本机注册、注销和状态持久化，但尚未实测注销或重启 Mac 后的真实登录启动，不把它作为已完成的端到端保证。</p></details>
+      <details><summary>这是 ntfy 官方客户端吗？源码公开吗？<span aria-hidden="true">+</span></summary><p>不是。这是独立开发的 macOS 客户端，与 ntfy 官方没有隶属关系。公开 GitHub 仓库目前提供应用介绍和安装包，尚未发布应用源码；因此不宣称为开源客户端。</p></details>
+      <details><summary>当前版本还有什么已知限制？<span aria-hidden="true">+</span></summary><p>这是早期版本。部分本机通知场景曾出现系统灰色占位图标，修复情况仍需进一步确认。尚未逐一验证其他 macOS 版本；Liquid Glass 使用 macOS 26+ 原生材质，旧系统使用原生材质回退。</p></details>
+    </div></section>
+
+    <section class="download-section wrap" id="download" aria-labelledby="download-title"><div class="download-heading"><img src="assets/app-icon.png" width="64" height="64" alt="" loading="lazy"><div><p class="eyebrow">READY WHEN YOU ARE.</p><h2 id="download-title">让下一条消息，<br>有个落点。</h2></div></div><div class="download-actions"><a class="button download-button" href="https://github.com/TimmySheep/ntfy-native/releases/download/v0.1.0/ntfy-native-0.1.0-macos.zip">下载 v0.1.0 <span aria-hidden="true">↓</span></a><p>macOS 13+ · Apple silicon · ZIP 3.37 MB</p><a class="release-link" href="https://github.com/TimmySheep/ntfy-native/releases/tag/v0.1.0">发布说明与安装注意事项 <span aria-hidden="true">↗</span></a></div><p class="download-notice">早期版本 · ad-hoc 签名 · 未经 Apple 公证。下载前请阅读上方安装说明。</p></section>
+  </main>
+  <footer class="wrap site-footer"><a class="brand" href="#top"><img src="assets/app-icon.png" width="24" height="24" alt=""><span>ntfy<span class="brand-suffix">-native</span></span></a><p>独立 macOS 客户端，非 ntfy 官方产品。</p><div><a href="https://github.com/TimmySheep/ntfy-native">GitHub ↗</a><a href="https://ntfy.sh/">了解 ntfy ↗</a><span class="mono">© 2026 Tim Huang</span></div></footer>
+</body>
+</html>
