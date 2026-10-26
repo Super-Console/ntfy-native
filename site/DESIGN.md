@@ -2,7 +2,7 @@
 
 ## 技术与定位
 
-纯静态 HTML、CSS、JavaScript；无框架、Tailwind 或组件库，不安装依赖。固定深色主题，使用 color-scheme: dark，并支持 prefers-reduced-motion。中文单页，部署于 `/ntfy-native/`。
+纯静态 HTML、CSS、JavaScript；无框架、Tailwind 或组件库，不安装依赖。固定深色主题，使用 color-scheme: dark，并支持 prefers-reduced-motion。中英双语单页；中文默认部署于 `/ntfy-native/`，英文版部署于 `/ntfy-native/en/`。
 
 方向：现代、克制、宽松。区别于 Local Transcribe / Murmur 的浅色天空与居中首屏，采用石墨底色、薄荷绿信号、左右分栏首屏与终端式说明。产品交互是明确标注的 HTML 示意，不冒充截图。
 
